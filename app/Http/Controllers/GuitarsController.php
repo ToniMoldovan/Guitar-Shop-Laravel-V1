@@ -13,7 +13,9 @@ class GuitarsController extends Controller
      */
     public function index()
     {
-        //
+        return view('guitars.index', [
+            'text' => 'Toni'
+        ]);
     }
 
     /**
