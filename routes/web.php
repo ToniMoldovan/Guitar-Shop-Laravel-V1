@@ -3,8 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GuitarsController;
 
-Route::get('/home', function () {
-    return '<h1>Hello there! :)</h1>';
-})->name('home');
+Route::get('/', function () {
+    return view('homepage');
+});
 
 Route::resource('guitars', GuitarsController::class);
